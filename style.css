@@ -1,0 +1,398 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body{overflow-x: hidden;}
+.container .collapse .navbar-nav .nav-item .nav-link, .container .navbar-brand{
+    color: black; 
+    /* font-family: 'Kaushan Script', cursive; */
+    font-size: 1.5rem;
+}
+
+.ad-nav-light
+{
+    
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.fixed-top 
+{
+    position: relative;
+}
+#navid.cusNav
+{
+    background-color: black;
+    opacity: 0.7;
+    transition: background-color 0.5s ease;
+    z-index: 99;
+    position: fixed;
+}
+#navid .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+.container .collapse .navbar-nav .nav-item .nav-link
+{
+    display: inline-block;
+}
+.container .collapse .navbar-nav .nav-item .nav-link::after{
+    width: 0;
+    content: '';
+    display: block;
+    transition: width .3s;
+}
+
+.container .collapse .navbar-nav .nav-item .nav-link:hover::after
+{
+    width: 100%;
+    border-bottom: 2px solid #508519;
+    color: #508519;
+}
+.wrap
+{
+    height: 697px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: inherit;
+}
+.wrap .overlay
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   opacity: .6;
+   width: 50%;
+   height: inherit;
+   /* background-color: green; */
+   background-image: linear-gradient(to right, #9ec973,rgb(52, 216, 52));
+   
+}
+.wrap .row
+{
+    height: 520px;
+}
+
+.row .col-lg-8 .text .subheading
+{
+    color: #508519;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.row .col-lg-8 .text .name
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+.row .col-lg-8 .text h2{
+    font-weight: bold;
+    margin-top: 5%; 
+}
+.row .col-lg-8 .text h2 span{
+    color: #508519;
+}
+.aboutData .aboutHeading h2
+{
+    font-size: 3rem;
+}
+.row .col-lg-8 .text .btn
+{
+    border-radius: 30px;
+}
+/* .row .col-lg-8 .text .btn-outline-success:hover
+{
+    background-color: rgb(136, 34, 34);
+    color: white;
+} */
+.row .col-lg-8 .text .btn a{
+    text-decoration: none;
+    color: #28a745;
+}
+.row .col-lg-8 .text .btn a:hover{
+    color: white;
+}
+.aboutMe
+{
+    padding: 230px 0px 230px 0px ;
+}
+.aboutMe .aboutImg  img
+{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    
+}
+.aboutMe .imgWrapper
+{
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: #9ec973;
+    
+}
+.aboutMe .aboutData{
+    text-align: justify;
+    font-size: 1.5rem;
+    
+}
+.aboutMe .aboutData .buttonLink .btn{
+    border-radius: 30px;
+    padding: 5px 20px 5px 20px;
+}
+/* .skillsMe{
+    background-color: #9ec973; 
+    min-height: 50vh;
+    background: linear-gradient(#0f4675,#0f4675 50%, #fff 50%, #fff 100%);
+} */
+.skillsMe
+{
+    padding: 150px 0px 150px 0px;
+    background-color: rgb(219, 236, 219);
+    /* background-color: rgb(245, 248, 250) */
+}
+
+.skillsMe .container .row
+{
+   display: flex;
+   justify-content: space-around;
+}
+.skillsMe .container .row .skillsData
+{
+    margin: 50px 0px 50px 0px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 400px;
+    transition: all 0.3s ease-in-out;
+   
+}
+.skillsData .header .icon i
+{
+    font-size: 3rem;
+}
+.skillsData .header .icon
+{
+    background-color: #9ec973;
+    border-radius: 50%;
+    width: 26%;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+} 
+.skillsData .section h3
+{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.skillsData .section .webIcon
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillsData .section .webIcon .row1{padding: 10px;}
+.skillsData .section .webIcon .row1 img{width: 50px; height: 50px; margin:10px;}
+.skillsData .section .webIcon .row1 .change{width: 70px; height: 70px;}
+.skillsData .section .webIcon .row1 .change1{width: 90px; height: 80px;}
+.project{padding: 130px 0px 130px 0px; background-color: rgb(219, 236, 219);}
+.project .container-fluid
+{
+    background-image: url('assets/background.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project .laptop , .certificate .laptop
+{
+    background-color: white;
+    width: 60%;
+    height: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.certificate .laptop , .certificate .base
+{
+    border: 1px solid black;
+}
+.project .base ,.certificate .base
+{    height: 6px;
+     width: 67%;
+     position: absolute;
+     top: 66%;
+     background-color: white;
+
+}
+.project .laptop .inner , .certificate .laptop .inner
+{
+    border: 1px solid black;
+    height: 140px;
+    border-radius: 5px ;
+}
+.project .row{height: 500px;}
+.project .laptop .inner img ,  .certificate .laptop .inner img {border-radius: 5px;}
+.project .projectData , .certificate .certiData{
+    color: white;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+.certificate .certiData{color: black;}
+.project .projectData .data{font-size: 1rem; letter-spacing: 1px; }
+.certificate{padding: 130px 0px 130px 0px; background-color: rgb(219, 236, 219);}
+.certificate .container-fluid , .certificate .row
+{
+    height: 500px;
+    background-color: rgb(219, 236, 219);
+}
+
+.foot{
+    background-color: #333;
+    padding: 5px;
+    color: white;
+}
+ .foot span
+ {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      padding: 2px 8px 2px 8px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+ }
+
+ .modal .modal-content .modal-body .container .row .box
+ {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    height: 200px;
+    width: 100%;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+ }
+ .modal .modal-content .modal-body .container .row .box hr
+ {
+     margin-top: 1rem;
+     border: 0px solid rgba(0,0,0,.1);
+ }
+ .modal .modal-content .modal-body .container .row .box:hover{
+     transform: scale(1.1);
+ }
+ .modal .modal-content .modal-body .container .row .box .upper
+ {
+     height: 100px;
+     /* border-bottom: 1px solid black; */
+ }
+ .modal .modal-content .modal-body .container .row .box .lower
+ {
+     height: 42%;
+     border-radius: 0px 0px 10px 10px;
+ }
+ /* .modal .modal-content .modal-body .container .row .box .lower h
+ {
+     font-weight: bold;
+ } */
+ .modal .modal-content .modal-body .container .row .box .upper img{
+     width: 100%;
+     height: 100px;
+ }
+ .modal .modal-dialog{max-width: 80%;}
+ .modal .modal-content .modal-body .container .row .boxPro
+ {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    /* height: 100px; */
+    width: 100%;
+    position: relative;
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+ }
+ .modal .modal-content .modal-body .container .row .boxPro i{
+     font-size: 1.5rem;
+ }
+ .modal .modal-content .modal-body .container .row .boxPro h4
+ {display: inline;}
+ .modal .modal-content .modal-body .container .row .boxPro .data{
+    font-size: 1rem; 
+}
+ .modal .modal-content .modal-body .container .row .boxPro .techUsed
+ {
+     position: absolute;
+     right: 10px;
+     bottom: 10px;
+ }
+ .modal .modal-content .modal-body .container .row .boxPro .techUsed img
+ {
+   height: 40px;
+   padding: 5px;
+ }
+
+/*For Mobiles Phones*/
+@media only screen and (min-width: 320px) and (max-width: 480px)
+{
+   
+    #navid .navbar-toggler{background-color: white;}
+    .row .col-lg-8 .text .name{font-size: 2rem;}
+    .row .col-lg-8 .text h2{font-size: 1.5rem;}
+    .aboutMe .aboutData{font-size: 1rem;}
+    .aboutMe{padding: 130px 0px 130px 0px ; overflow-x: hidden;}
+    .aboutMe .aboutImg  img{
+        height: 200px;
+        width: 200px;
+        }
+    .aboutMe .imgWrapper
+    {
+        height: 220px;
+        width: 220px;
+    }
+    .aboutMe .aboutData .buttonLink .button2{float: right;}   
+    .skillsData .header .icon{width: 25%;}
+    .skillsMe .row{padding: 7%;}
+    .project .row , .certificate .row{padding: 10px;}
+    .project .laptop , .certificate .laptop{height: 120px;}
+    .project .laptop .inner , .certificate .laptop .inner{height: 110px;}
+    .project .base {top: 85%;}
+    .certificate .base{top: 78%;}
+    .project .projectData , .certificate .certiData{font-size: 1.2rem;}
+    .modal .modal-dialog{max-width: 90%;}
+
+}
+/*ipads and tablets*/
+@media only screen and (min-width: 481px) and (max-width: 768px)
+{
+    .wrap ,.wrap .row ,  .wrap .overlay{height: 1044px;}
+    .row .col-lg-8 .text .subheading{font-size: 1.5rem;}
+    .row .col-lg-8 .text .name{font-size: 3.5rem;}
+    .row .col-lg-8 .text h2{font-size: 2.5rem;}
+    .aboutMe{padding: 130px 0px 130px 0px ; overflow-x: hidden;}
+    .aboutMe .aboutData{font-size: 1.5rem;}
+}
+/*small screens and laptops*/
+@media only screen and (min-width: 769px) and (max-width: 1024px)
+{
+    .row .col-lg-8 .text .name{font-size: 44px;}
+}
+/*large screen like destop*/
+@media only screen and (min-width: 1025px) and (max-width: 1200px)
+{
+    .row .col-lg-8 .text .name{font-size: 3.5rem;}
+}
+/*Extra large screen and tv*/
+@media only screen and (min-width: 1201px)
+{
+    .row .col-lg-8 .text .name{font-size: 3.5rem;}
+}
