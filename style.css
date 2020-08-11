@@ -385,7 +385,7 @@ body{overflow-x: hidden;}
     .project .base {top: 85%;}
     .certificate .base{top: 78%;}
     .project .projectData , .certificate .certiData{font-size: 1.2rem;}
-    .modal .modal-dialog{max-width: 90%;}
+    .modal .modal-dialog{max-width: 95%; padding: 5px;}
 
 }
 /*ipads and tablets*/
